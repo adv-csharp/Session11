@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_di_sample_asli", "3_di_sa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_serialization", "4_serialization\4_serialization.csproj", "{D4FF7CB4-767D-4F1A-874F-F6A7600C0C0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_regex", "5_regex\5_regex.csproj", "{2228F898-53EA-4795-BACC-0E5945BFD3CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D4FF7CB4-767D-4F1A-874F-F6A7600C0C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4FF7CB4-767D-4F1A-874F-F6A7600C0C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4FF7CB4-767D-4F1A-874F-F6A7600C0C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2228F898-53EA-4795-BACC-0E5945BFD3CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2228F898-53EA-4795-BACC-0E5945BFD3CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2228F898-53EA-4795-BACC-0E5945BFD3CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2228F898-53EA-4795-BACC-0E5945BFD3CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
