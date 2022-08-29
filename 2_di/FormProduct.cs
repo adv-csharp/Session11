@@ -14,15 +14,23 @@ namespace _2_di
 {
     public partial class FormProduct : Form
     {
-        public FormProduct()
+        public ICrud<Product> _crud { get; }
+        public FormProduct(ICrud<Product> crud )
         {
             InitializeComponent();
+            _crud = crud;
         }
+
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            var crud = new Crud<Product>();
-            crud.Create(new Product { Name = textBox1.Text });
+            //var _crud = new CrudDB<Product>();
+            _crud.Create(new Product { Name = textBox1.Text });            
+        }
+
+        private void FormProduct_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

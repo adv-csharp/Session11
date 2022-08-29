@@ -1,3 +1,6 @@
+using _2_di.Models;
+using _2_di.Services;
+
 namespace _2_di
 {
     public partial class Form1 : Form
@@ -21,12 +24,27 @@ namespace _2_di
              *  
              * DI ~ Inversion of Control - IoC
              * 
+             * 
+             * IoC Container
+             *  autofac
+             *  ninject
+             *  unity
+             * 
+             *  map (jadval)
+             *      ICrud -> CrudDB
              */
         }
 
         private void btnCrudDB_Click(object sender, EventArgs e)
         {
-            FormProduct formProduct = new FormProduct();
+            FormProduct formProduct = new FormProduct(new CrudDB<Product>());
+            //FormProduct formProduct = Ioc.getService<FormProduct>();
+            formProduct.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormProduct formProduct = new FormProduct(new CrudAPI<Product>());
             formProduct.ShowDialog();
         }
     }
