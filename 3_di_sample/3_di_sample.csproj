@@ -125,6 +125,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\ILog.cs" />
+    <Compile Include="Service\LogDB.cs" />
+    <Compile Include="Service\LogFile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
